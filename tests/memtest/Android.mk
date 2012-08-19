@@ -17,7 +17,7 @@ LOCAL_MODULE:= memtest
 LOCAL_MODULE_TAGS := optional
 
 ## LOCAL_CFLAGS += -fstack-protector-all
-LOCAL_CFLAGS += -fomit-frame-pointer
+LOCAL_CFLAGS += -fomit-frame-pointer -fno-strict-aliasing
 LOCAL_C_INCLUDES += bionic external/stlport/stlport
 
 include $(BUILD_EXECUTABLE)
